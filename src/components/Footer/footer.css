@@ -1,0 +1,12 @@
+/* button {
+    background-color: white;
+} */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+i {
+    padding-right: 15px;
+    font-size: xx-large;
+}

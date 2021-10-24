@@ -1,5 +1,6 @@
 import React from 'react';
-import profileImage from '../../assets/profileImage.png';
+import './about.css'
+import profileImage from '../../assets/profile/profileImage.png';
 
 
 function About() {
@@ -11,8 +12,14 @@ function About() {
       </div>
       <div class="w-full md:w-5/12 ml-auto mr-auto px-4">
         <div class="md:pr-12">
-          <h3 class="text-3xl font-semibold">About Me</h3>
-          <p class="mt-4 text-lg leading-relaxed text-blueGray-500">
+          <h3 class="text-3xl font-semibol text-gray-700">About Me</h3>
+          <p class="mt-4 text-lg leading-relaxed text-gray-700">
+            The extension comes with three pre-built pages to help you get
+            started faster. You can change the text and images and you're
+            good to go.
+          </p>
+          <br/>
+          <p class="mt-4 text-lg leading-relaxed text-gray-700">
             The extension comes with three pre-built pages to help you get
             started faster. You can change the text and images and you're
             good to go.
