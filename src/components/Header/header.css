@@ -3,3 +3,8 @@ h1 {
     font-family: "Sofia", sans-serif;
     
 }
+nav {
+    /* background-color: #FFE4E1; */
+    background-image: linear-gradient(#FDF5E6, #FFB6C1);
+    
+}

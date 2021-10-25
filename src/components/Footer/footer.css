@@ -5,8 +5,12 @@
 .footer {
     display: flex;
     justify-content: center;
+
 }
-i {
+button:hover {
+    opacity: 75%;
+}
+/* i {
     padding-right: 15px;
     font-size: xx-large;
-}
+} */

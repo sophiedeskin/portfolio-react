@@ -1,25 +1,29 @@
-import React from 'react';
+import React from "react";
+import PortfolioContainer from "./PortfolioContainer";
 import Header from "./components/Header/index.js"
-import About from "./components/About/index.js"
 import Footer from "./components/Footer/index.js"
-import Project from "./components/Project/index.js"
-import './App.css';
+import Nav from './components/Nav/index.js';
 
-function App() {
-  return (
-<div className="app">
-<Header/>
-<div className="sections">
-<About/>
-</div>
-<div className="sections2">
-<Project/>
-</div>
-<div className="footer">
-<Footer/>
-</div>
-</div>  
+
+const App = () => 
+{
+return (
+    <div>
+      <Header>
+        <Nav
+        //   pages={pages}
+        //   setCurrentPage={setCurrentPage}
+        //   currentPage={currentPage}
+        ></Nav>
+      </Header>
+      <main>
+        <PortfolioContainer/>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
 export default App;
+
+
