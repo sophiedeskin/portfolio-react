@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './contact.css'
+// const nodemailer = require("nodemailer");
 import { validateEmail } from '../../utils/helpers';
 
 function Contact() {
@@ -42,7 +43,7 @@ function Contact() {
 
     return (
           <form id="contact-form" onSubmit={handleSubmit}>
-  <div className="flex flex-wrap -mx-3 mb-6">
+  <div className="flex flex-wrap -mx-3 mb-15">
     <div className="w-full px-3">
             <br/>
       <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-password">

@@ -14,19 +14,11 @@ function Nav({ currentPage, handlePageChange }) {
             About
           </a>
           <a
-            href="#project"
-            onClick={() => handlePageChange('Project')}
-            className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
+            href="#portfolio"
+            onClick={() => handlePageChange('Portfolio')}
+            className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
           >
             Porfolio
-          </a>
-          <a
-            href="#contact"
-  
-            onClick={() => handlePageChange('Contact')}
-            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
-          >
-            Contact
           </a>
           <a
             href="#resume"
@@ -35,6 +27,14 @@ function Nav({ currentPage, handlePageChange }) {
             className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
           >
             Resume
+          </a>
+          <a
+            href="#contact"
+  
+            onClick={() => handlePageChange('Contact')}
+            className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
+          >
+            Contact
           </a>
       </div>
       </div>

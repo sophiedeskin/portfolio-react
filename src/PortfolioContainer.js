@@ -5,13 +5,14 @@ import Contact from "./components/Contact/index.js"
 import About from "./components/About/index.js"
 import Resume from "./components/Resume/index.js"
 import Nav from './components/Nav/index.js';
-import Page from "./components/Page";
+import Project from "./components/Project";
 import './App.css';
+import Portfolio from "./components/Portfolio/index.js";
 
 export default function PortfolioContainer() {
   const [currentPage, setCurrentPage] = useState('Home');
 
-  // TODO: Add a comment describing the functionality of this method
+
   const renderPage = () => {
     if (currentPage === 'Contact') {
       return <Contact />;
@@ -22,6 +23,9 @@ export default function PortfolioContainer() {
     if (currentPage === 'Resume') {
       return <Resume />;
     }
+    if (currentPage === 'Portfolio') {
+      return <Portfolio />;
+    }
     return <About />;
 
   };
@@ -29,12 +33,14 @@ export default function PortfolioContainer() {
   const handlePageChange = (page) => setCurrentPage(page);
 
   return (
+    <>
     <div>
-      {/* // TODO: Add a comment describing what we are passing as props */}
+      <Header/>
       <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
-      {/* // TODO: Add a comment explaining what is happening on the following line */}
       {renderPage()}
     </div>
+      <Footer/>
+      </>
   );
 }
 
