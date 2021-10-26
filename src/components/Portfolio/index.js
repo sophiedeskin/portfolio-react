@@ -3,9 +3,9 @@ import React, { useState } from 'react';
 import codingJobs from '../../assets/projects/coding-jobs.png';
 import budgetTracker from '../../assets/projects/budget-tracker.png';
 import SoundBord from '../../assets/projects/musical-soundbored.png';
-import TPG from '../../assets/projects/team-profile-generator.png';
+import TPG from '../../assets/projects/team-generator.png';
 import techBlog from '../../assets/projects/tech-blog.png';
-import workDay from '../../assets/projects/work-day-planner.png';
+import workDay from '../../assets/projects/day-planner.png';
 import Project from "../Project";
 
 function Portfolio() {
@@ -27,7 +27,7 @@ function Portfolio() {
       image: SoundBord
     },
     {
-      name: 'team-profile-generator',
+      name: 'team-generator',
       description: 'TPG Description',
       link: "https://drive.google.com/file/d/1S_VpZPxi1399UQ5gNNWmF6-WeM1czY7D/preview",
       repo: "https://github.com/sophiedeskin/team-profile-generator",
@@ -41,7 +41,7 @@ function Portfolio() {
       image: techBlog
     },
     {
-      name: 'work-day-planner',
+      name: 'day-planner',
       description: 'Work Day Planner Description',
       link: "https://sophiedeskin.github.io/daily-planner/",
       repo: "https://github.com/sophiedeskin/daily-planner",

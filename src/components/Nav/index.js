@@ -2,8 +2,8 @@ import React from 'react';
 
 function Nav({ currentPage, handlePageChange }) {
     return (
-        <div className="flex justify-around h-20 shadow items-center">
-        <div className="flex items-center space-x-8">
+        <div className="flex justify-around h-20 items-center">
+        <div className="flex items-center">
         <div className="hidden md:flex justify-end space-x-4">
           <a 
             href="#about"
