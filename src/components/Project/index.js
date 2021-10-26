@@ -13,7 +13,7 @@ export default function Project(
 <div className="mx-auto project" key={name}>
   <div className="bg-white shadow-md border border-gray-200 rounded-lg text-gray-700 ">
       <a href={link} target="_blank">
-          <img className="rounded-t-lg" src={image} alt={tweakName(name)}/>
+          <img className="rounded-t-lg cursor-auto" src={image} alt={tweakName(name)}/>
       </a>
       <div className="p-5 card">
           <a href="#">
