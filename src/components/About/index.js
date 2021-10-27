@@ -14,15 +14,11 @@ function About() {
         <div className="md:pr-12">
           <h3 className="text-3xl font-semibol text-gray-700">About Me</h3>
           <p className="mt-4 text-lg leading-relaxed text-gray-700">
-            The extension comes with three pre-built pages to help you get
-            started faster. You can change the text and images and you're
-            good to go.
+            Hello, my name is Sophie and welcome to my profile page!
           </p>
           <br/>
           <p className="mt-4 text-lg leading-relaxed text-gray-700">
-            The extension comes with three pre-built pages to help you get
-            started faster. You can change the text and images and you're
-            good to go.
+           I'm a web developer based out of Scottsdale, AZ.
           </p>
         </div>
       </div>

@@ -21,11 +21,11 @@ function Contact() {
     } else if (inputType === 'name') {
       setName(inputValue);
     } else {
-      setMessage(inputValue);
+      setMessage(inputValue === 'message');
     }
   };
-
   const handleFormSubmit = (e) => {
+    if (email && name && message) {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
     emailjs.sendForm('service_5pe2lgp', 'template_ywo5m0e', e.target, 'user_H8lifA8XKrQAeUh737wDO')
@@ -43,7 +43,9 @@ function Contact() {
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
-    
+    else {
+      alert(`Please fill in all required fields!`);
+    }}
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
   };
@@ -91,7 +93,7 @@ return (
     </div>
   </div>
         <button className ="text-pink-600 bg-pink-300 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none mb-2" type="button"  type="submit">
-            <a href="https://github.com/sophiedeskin" target="_blank"><i className="far fa-paper-plane"></i></a>
+           <i className="far fa-paper-plane"></i>
             </button>
 </form>  
     )
@@ -100,21 +102,3 @@ return (
   
   
   export default Contact;
-  //  <div className="container">
-  //   <h1>Contact Form</h1>
-  //   <form
-  //   onSubmit={sendEmail}
-  //   >
-  //     <label>Name</label>
-  //     <input type='text' name='name'/>
-  
-  //     <label>Email</label>
-  //     <input type='email' name='user_email'/>
-  
-  //     <label>Message</label>
-  //     <textarea name='message' rows='5'/>
-  
-  //     <input type='submit' value ='Send'/>
-  
-  //     </form>
-  //   </div> 
