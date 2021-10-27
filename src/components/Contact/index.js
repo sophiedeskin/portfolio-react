@@ -37,15 +37,15 @@ function Contact() {
     if (!validateEmail(email) || !name) {
       setErrorMessage('Email or name is invalid');
       // We want to exit out of this code block if something is wrong so that the user can correct it
+      setName('');
+      setEmail('');
+      setMessage('');
       return;
       // Then we check to see if the password is not valid. If so, we set an error message regarding the password.
     }
     
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
-    setName('');
-    setEmail('');
-    setMessage('');
   };
   // const handleChange = (e) => {
   //   if (e.target.name === 'email') {
