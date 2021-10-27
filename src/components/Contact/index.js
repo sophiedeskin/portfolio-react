@@ -90,7 +90,7 @@ return (
             </textarea>
     </div>
   </div>
-        <button className ="text-pink-600 bg-pink-300 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none mb-6" type="button"  type="submit">
+        <button className ="text-pink-600 bg-pink-300 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none mb-2" type="button"  type="submit">
             <a href="https://github.com/sophiedeskin" target="_blank"><i className="far fa-paper-plane"></i></a>
             </button>
 </form>  

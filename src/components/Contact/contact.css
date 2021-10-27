@@ -11,4 +11,6 @@ span {
     position: relative;
     right: 450px;
 }
-
+button:hover {
+    opacity: 75%;
+}
