@@ -1,5 +1,6 @@
 import React from 'react'
 import resume from '../../assets/Sophie Deskin Resume.pdf';
+import './resume.css'
 
 export default function Resume() {
     return (
@@ -19,7 +20,7 @@ export default function Resume() {
       </button>
       </a>
       <br/>
-      <div className='proficiencies mx-80 text-lg text-gray-700 ' id="proficiencies">
+      <div className='proficiencies text-lg text-gray-700 flex-column wrap' id="proficiencies">
        <h3 className='text-xl'>Front-end Proficiencies</h3>
        <br/>
        <ul className="skills">

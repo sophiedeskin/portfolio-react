@@ -4,12 +4,12 @@ function Nav({ currentPage, handlePageChange }) {
     return (
         <div className="flex justify-around h-20 items-center">
         <div className="flex items-center">
-        <div className="hidden md:flex justify-end space-x-4">
+        <div className="md:flex justify-end space-x-4">
           <a 
             href="#about"
             onClick={() => handlePageChange('About')}
   
-            className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}className="hover:text-indigo-600 text-gray-700"
+            className={currentPage === 'About'}className="hover:text-indigo-600 text-gray-700"
           >
             About
           </a>
