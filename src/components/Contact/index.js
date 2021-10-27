@@ -47,34 +47,7 @@ function Contact() {
 
     // If everything goes according to plan, we want to clear out the input after a successful registration.
   };
-  // const handleChange = (e) => {
-  //   if (e.target.name === 'email') {
-  //     const isValid = validateEmail(e.target.value);
-  //     if (!isValid) {
-  //       setErrorMessage('Your email is invalid.');
-  //     } else {
-  //       setErrorMessage('');
-  //     }
-  //   } else {
-  //     if (!e.target.value.length) {
-  //       setErrorMessage(`${e.target.name} is required.`);
-  //     } else {
-  //       setErrorMessage('');
-  //     }
-  //   }
-  //   if (!errorMessage) {
-  //     setFormState({ ...formState, [e.target.name]: e.target.value });
-  //     console.log('Handle Form', formState);
-  //   }
-  // };
 
-  // function sendEmail(e) {
-  //   e.preventDefault();
-  //   emailjs.sendForm('service_5pe2lgp', 'template_ywo5m0e', e.target, 'user_H8lifA8XKrQAeUh737wDO')
-  //   .then(res => {
-  //     console.log(res);
-  //   }).catch (err => console.log(err));
-  // }
 return (
 
   <form className="flex-col justify-center content-center items-center" id="contact-form" onSubmit={handleFormSubmit}>
@@ -117,11 +90,9 @@ return (
             </textarea>
     </div>
   </div>
-  <button className="py-2" type="submit">
-            <div>
-              <span className="text-xs font-semibold inline-block py-1 px-2 uppercase rounded-full text-pink-600 bg-pink-300 mr-3"><i class="far fa-paper-plane"></i></span>
-            </div>
-        </button>
+        <button className ="text-pink-600 bg-pink-300 shadow-lg font-normal h-10 w-10 rounded-full outline-none focus:outline-none mb-6" type="button"  type="submit">
+            <a href="https://github.com/sophiedeskin" target="_blank"><i className="far fa-paper-plane"></i></a>
+            </button>
 </form>  
     )
   }
